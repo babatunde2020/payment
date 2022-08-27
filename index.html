@@ -12,11 +12,11 @@
 <body>
      <!--nav-bar-->
   <div class="bg1st shadow sticky-top">
-    <nav class="navbar container d-flex align-item-center order-list  navbar-expand-lg ">
+    <nav class="navbar  container  align-item-center  navbar-expand-lg d-flex order-list">
       <a href="/" class="navbar-brand me-auto">
         <div class="logo">E-connect.</i></div>
       </a>
-      <ul class="navbar-nav mx-auto">
+      <ul class="navbar-nav mn mx-auto">
         <li class="">
           <h4 class="deph4 mt-1"> <span class="depno shadow">1</span> DEPOSIT</h4>
         </li>
@@ -25,13 +25,25 @@
           <h4 class="deph4 mt-1" style="opacity: 0.3;"> <span class="depno shadow">2</span> PERSONAL AREA</h4>
         </li>
       </ul>
+
+      <div class="row mnb mt-3 mx-auto ">
+        <div class="col">
+            <h4 class="deph4 mt-1"> <span class="depno shadow">1</span>DEPOSIT</h4>
+        </div>
+        <div class="col">
+            <hr class="depline">
+        </div>
+        <div class="col">
+            <h4 class="deph4 mt-1" style="opacity: 0.3;"> <span class="depno shadow">2</span>PERSONAL&nbsp;AREA</h4>
+        </div>
+      </div>
         </div> 
     </nav>
     
     <div class="container">
         <div class="card shadow bg-light depcard mt-3">
             <h4 class="deph4">Your account was successfully created <i class="fas fa-check rconfirm"></i></h4>
-            <p class="depp">Register your prefered plan by making your payment to the details provided</p>
+            <p class="depp">Register your prefered plan</p>
             <div class="accdbg shadow">
                <div class="row">
                     <div class="col">
@@ -45,6 +57,8 @@
                         <h6 class="acch6">SERVER</h6>
                         <p class="accp">000000000</p>
                     </div>
+               </div>
+               <div class="row">
                     <div class="col">
                         <h6 class="acch6">ACCOUNT TYPE</h6>
                         <p class="accp">000000000</p>
@@ -52,6 +66,10 @@
                     <div class="col">
                         <h6 class="acch6">CURRENCY</h6>
                         <p class="accp">NGN</p>
+                    </div>
+                    <div class="col">
+                        <h6 class="acch6">LEVERAGE</h6>
+                        <p class="accp">1:500</p>
                     </div>
                </div>
             </div>
@@ -88,8 +106,79 @@
                     </td>
                 </tr>
             </table>
-            <a href="" type="button" class="btn btn-success notsbtn mt-3 shadow">NOTIFY US AFTER TRANSFER</a>
+            <a href="" type="button" class="btn btn-success notsbtn mt-3 shadow" data-bs-toggle="modal" data-bs-target="#myModal3">NOTIFY US AFTER TRANSFER</a>
         </div>
     </div>
+
+    <!-- The proof Modal -->
+<div class="modal" id="myModal3">
+    <div class="modal-dialog modal-fullscreen scrollable">
+      <div class="modal-content prfm">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title prfh4">Post-transfer deposit confirmation</h4>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p class="prfp">You can start your daily task in your personal area as soon as we've processed your deposit.</p>
+          <div class="container">
+            <form action="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="amount">Amount:</label>
+                    <input type="number" class="form-control" placeholder="" name="amount">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="bank">Beneficiary's bank:</label>
+                    <input type="text" class="form-control" placeholder="bank name" name="bank">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 py-2">
+                      <label for="amount">Transfer type:</label>
+                      <input type="text" class="form-control" placeholder="online banking" name="type">
+                    </div>
+                    <div class="col col-md-6 py-2">
+                      <label for="bank">Sender's bank:</label>
+                      <input type="password" class="form-control" placeholder="" name="bank">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 py-2">
+                      <label for="amount">Sender name:</label>
+                      <input type="text" class="form-control" placeholder="" name="">
+                    </div>
+                    <div class="col-md-6 py-2">
+                      <label for="bank">Sender's bank account number:</label>
+                      <input type="number" class="form-control" placeholder="" name="bank">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 py-2">
+                      <label for="amount">Payment date:</label>
+                      <input type="date" class="form-control" placeholder="" name="date">
+                    </div>
+                    <div class="col-md-6 py-2">
+                      <label for="bank">Payment proof:</label>
+                      <input type="file" class="form-control" placeholder="choose file" name="bank">
+                    </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a type="button" class="btn btn-success" >CONFIRM REQUEST</a>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <script src="server.js"></script>
+    <script src="bootstrap5/js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
