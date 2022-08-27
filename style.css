@@ -85,6 +85,9 @@
     font-size: x-small;
     font-weight: 600;
   }
+  .mn{
+    display: none;
+  }
 }
 body{
   background-color: #e6ffe6;
